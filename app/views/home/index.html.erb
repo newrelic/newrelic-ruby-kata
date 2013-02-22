@@ -27,7 +27,8 @@
     <div class="span4">
       <h2>Step 2</h2>
       <p>Create a Heroku app. Using your <a href="http://heroku.com">heroku</a> account, create
-	a new app and then push the kata code to it.</p>
+	a new app and then push the kata code to it. 
+	(Use the <a href="https://toolbelt.heroku.com/">Heroku toolbelt</a>.)</p>
     <pre>heroku apps:create
 git push heroku master</pre>
     <p><a class="btn" href="http://heroku.com">Create &amp; Push! &raquo;</a></p>
@@ -45,7 +46,8 @@ git push heroku master</pre>
     <div class="span4">
       <h2>Step 4</h2>
         <p>Populate the sample database and set up memcache.</p>
-        <pre>heroku addons:add pgbackups:plus
+        <pre>heroku addons:add heroku-postgresql:dev
+heroku addons:add pgbackups:plus
 heroku addons:add memcache
 	
 heroku pgbackups:restore DATABASE 'http://newrelic-ruby-kata.herokuapp.com/sample-data.dump'</pre>
