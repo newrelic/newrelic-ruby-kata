@@ -1,0 +1,11 @@
+<h1>ManyAssets#index</h1>
+<p>Find me in app/views/many_assets/index.html.erb</p>
+<div class="well">
+  <% @num_high.times do |i| -%>
+    <% @num_wide.times do |j| -%>
+      <% icon = @icons[i*@num_wide + j] -%>
+      <img src='<%= "/many_assets/display/#{icon.id}.ico" %>' width='16' height='16' title='<%= icon.web_site.url %>'>
+    <% end -%>
+    <br>
+  <% end %>
+</div>

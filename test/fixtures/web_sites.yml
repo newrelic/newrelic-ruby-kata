@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  rank: 1
+  url: MyString
+  snippet: MyText
+
+two:
+  rank: 1
+  url: MyString
+  snippet: MyText

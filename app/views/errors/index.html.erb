@@ -1,0 +1,44 @@
+<h1>The Errors</h1>
+<div class="hero-unit" style="margin-top: 0; padding-top: 0.7em; padding-bottom: 0.7em; border: thin solid #ccc;">
+	<style>
+	.hero-unit p { line-height: 140%; }
+	</style>
+  <p>Kata: errors are not typically thought of as a performance problem but in a high-throughput 
+	web app, serializing the backtrace stack can end up being very expensive and result in
+	poor latency elsewhere. This page randomly throws errors - without reading the code, see
+	if you can figure out why.</p>
+  <p>Hint: Use the Errors page on New Relic 
+	and see if anything is obvious as you refresh the page a few times.</p>
+</div>
+
+<script>
+function bp() {
+	jQuery('#green').hide();
+	jQuery('#red').hide();
+	r = Math.random() * 2.0;
+	jQuery.ajax("/errors?ajax=" + r, {
+		success: function (data,status) {
+			jQuery('#green').show();
+		},
+		complete: function (xhr,status) {
+			if (status != "success") {
+				jQuery('#red').show();
+			}
+		}
+	});
+}
+jQuery().ready(function () {
+	jQuery('#green').hide();
+	jQuery('#red').hide();	
+});
+</script>
+Press the buttons a few times: 
+<div class="btn-group">
+<button class="btn" onclick="bp()">Left</button>
+<button class="btn" onclick="bp()">Middle</button>
+<button class="btn" onclick="bp()">Right</button>
+</div>
+<div id="green" style="background-color: #c0ffc0; width: 250px; height: 1em; border: thin solid gray; margin-top: 1em; margin-left: 160px;">
+</div>
+<div id="red" style="background-color: #ffc0c0; width: 250px; height: 1em; border: thin solid gray; margin-top: 1em; margin-left: 160px;">
+</div>

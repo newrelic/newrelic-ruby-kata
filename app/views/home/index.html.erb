@@ -1,0 +1,80 @@
+  <div class="hero-unit" style="margin-top: -1em; padding-bottom: 0.7em;">
+	<style>
+	.hero-unit p { line-height: 140%; }
+	</style>
+    <h1 style="margin-top: -0.5em;">New Relic Ruby Kata</h1>
+    <p>Code Kata is a term coined by Dave Thomas, co-author of the book The Pragmatic Programmer, 
+	in a nod to the Japanese concept of kata in the martial arts. A code kata is an exercise in 
+	programming which helps a programmer hone their skills through practice and repetition.</p>
+    <p>The goal of this Kata is to get your mind wired into performance driven development, 
+	to reinforce your skills as a user of <a href="http://newrelic.com">New Relic</a> 
+        and to help you get more familiar with <a href="http://www.heroku.com/">Heroku</a>.</p>
+    <p>Of course the code in some areas of this application is intentionally bad, but what fun would this 
+	be if everything worked the way it should?</p>
+    <p><a href="http://codekata.pragprog.com/" class="btn btn-primary btn-large">Learn more about 
+	Code Katas &raquo;</a></p>
+    
+  </div>
+
+  <div class="row">
+    <div class="span4">
+      <h2>Step 1</h2>
+      <p>Get the code. Using your <a href="http://github.com">github</a> account, fork
+	the <a href="https://github.com/newrelic/newrelic-ruby-kata">newrelic/newrelic-ruby-kata</a> repo
+	and then clone it onto your machine.</p>
+    <p><a class="btn" href="https://github.com/newrelic/newrelic-ruby-kata/">Fork &amp; Clone! &raquo;</a></p>
+ 	</div>
+    <div class="span4">
+      <h2>Step 2</h2>
+      <p>Create a Heroku app. Using your <a href="http://heroku.com">heroku</a> account, create
+	a new app and then push the kata code to it.</p>
+    <pre>heroku apps:create
+git push heroku</pre>
+    <p><a class="btn" href="http://heroku.com">Create &amp; Push! &raquo;</a></p>
+ 	</div>
+    <div class="span4">
+      <h2>Step 3</h2>
+      <p>Add New Relic to your Heroku app.
+          The New Relic agent will help you find and solve the performance issues in this 
+		application as well as help you see the complete impact of your changes.
+      </p>
+	  <pre>heroku addons:add newrelic:standard</pre>
+    </div>
+  </div>
+<div class="row">
+    <div class="span4">
+      <h2>Step 4</h2>
+        <p>Populate the sample database and set up memcache.</p>
+        <pre>heroku addons:add pgbackups:plus
+heroku addons:add memcache
+	
+heroku pgbackups:restore DATABASE 'http://newrelic-ruby-kata.herokuapp.com/sample-data.dump'</pre>
+    </div>
+    <div class="span4">
+      <h2>Step 5</h2>
+      <p>Fix the code / Solve as many of the Katas as you can. There are 
+	seven<!-- TODO --> distinct Katas in 
+	this application that can be torn apart and fixed by using your awesome dev 
+	abilities and the deep metrics that New Relic provides.</p>
+	<p><ol>
+		<li>Generate traffic a.k.a. click around</li>
+		<li>Discover a slow page</li>
+		<li>Investigate the problem (using New Relic)</li>
+		<li>Resolve with code changes</li>
+		<li>Push the revised code to Heroku.<br><em style="margin-left: 1em;">Repeat...</em></li>
+		</ol>
+		</p>
+    </div>
+    <div class="span4">
+      <h2>Step 6</h2>
+      <p>Let us know how you did, what you liked or disliked, 
+          what helped you find problems or what were the challenges, 
+          what you like about New Relic and what you don't - we just want to hear from you 
+			and see what we can do to get better.  
+		</p><p>
+          We'll even send you something for demonstrating your geek super powers when 
+			you complete the Kata - just provide us with your thoughts 
+			and a link to your forked repo (with your answers).</p>
+      <p><a class="btn" href="https://support.newrelic.com/home">Tell us! &raquo;</a></p>
+    </div>
+  </div>

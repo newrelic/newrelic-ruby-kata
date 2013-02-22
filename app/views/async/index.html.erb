@@ -1,0 +1,21 @@
+<h1>The Async</h1>
+<div class="hero-unit" style="margin-top: 0; padding-top: 0.7em; padding-bottom: 0.7em; border: thin solid #ccc;">
+	<style>
+	.hero-unit p { line-height: 140%; }
+	</style>
+  <p>Kata: not all computation needs to be done with the user waiting. 
+	This page has some expensive computations that are slowing down the page.
+	See if you can figure out how to move them elsewhere.</p>
+  <p>Hint: Use transaction traces to see where it is spending time.</p>
+</div>
+
+<p><%= image_tag('winning-lottery-ticket.jpg', :size => "150x350") %></p>
+<p>Thanks for visiting our page - we'll send your winning lottery numbers by email.</p>
+
+<%
+STDOUT.flush
+
+# After the page is rendered, send an email to remind the user of how awesome we are.
+send_email_to_user
+
+%>

@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+woody:
+  last_name: Cowboy
+  car: gyoza
+
+buzz:
+  last_name: Lightyear
+  car: spaceship

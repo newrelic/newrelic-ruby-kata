@@ -1,0 +1,18 @@
+<h1>The Loop</h1>
+<div class="hero-unit" style="margin-top: 0; padding-top: 0.7em; padding-bottom: 0.7em; border: thin solid #ccc;">
+	<style>
+	.hero-unit p { line-height: 140%; }
+	</style>
+  <p>Kata: 	N + 1 or some other unintended looping mishap can really hurt 
+	your site by stealing away cycles and speed.
+    We are not exactly dealing with n+1 here but what is happening is not really any better.
+</div>
+
+<div>
+  Do sites provide /favicon.ico ?
+  <ul>
+  <% @sites.each do |site| -%>
+    <li><%= site.url %> <% if site.icon.present? %><i class="icon-ok"></i><% end %></li>
+  <% end -%>
+  </ul>
+</div>

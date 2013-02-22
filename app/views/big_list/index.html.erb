@@ -1,0 +1,16 @@
+<h1>The Big List</h1>
+<div class="hero-unit" style="margin-top: 0; padding-top: 0.7em; padding-bottom: 0.7em; border: thin solid #ccc;">
+	<style>
+	.hero-unit p { line-height: 140%; }
+	</style>
+  <p>Kata: fetching a lot of data from the database just to summarize it can be slow.
+	This page is rather slow for just displaying a single number. See if you can
+	figure out a faster way to get the number.</p>
+  <p>Hint: use the Web transactions and see if you can
+	  find any Trace details.</p>
+</div>
+
+<div>
+  Found <%= @all_sites.count %> Web Sites, including <%= link_to @first_site.url, @first_site.url %>
+</div>
+
