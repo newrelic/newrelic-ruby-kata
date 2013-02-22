@@ -7,6 +7,7 @@ NewrelicRubyKata::Application.routes.draw do
   get "many_assets" => "many_assets#index"
   get "many_assets/display/:id" => "many_assets#display"
   get "errors" => "errors#index"
+  get "errors/ajax" => "errors#ajax"
 
   root :to => "home#index"
 end

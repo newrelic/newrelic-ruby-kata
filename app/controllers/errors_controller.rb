@@ -1,6 +1,10 @@
 class ErrorsController < ApplicationController
   def index
-    some_internal_logic(params['ajax'].to_i)
+  end
+  
+  def ajax
+    value = some_internal_logic(params['p'].to_i)
+    render :text => value
   end
   
   def some_internal_logic(x)

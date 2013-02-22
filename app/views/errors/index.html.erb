@@ -16,7 +16,7 @@ function bp() {
 	jQuery('#green').hide();
 	jQuery('#red').hide();
 	r = Math.random() * 2.0;
-	jQuery.ajax("/errors?ajax=" + r, {
+	jQuery.ajax("/errors/ajax?p=" + r, {
 		success: function (data,status) {
 			jQuery('#green').show();
 		},
