@@ -11,7 +11,7 @@ gem 'nokogiri'
 gem 'httparty'
 gem 'dalli'
 
-gem 'newrelic_rpm', '>=3.5'
+gem 'newrelic_rpm', '>=3.6'
 gem "pg", ">= 0.14.1"
 
 group :production do
