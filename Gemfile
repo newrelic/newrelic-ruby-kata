@@ -15,6 +15,7 @@ gem 'newrelic_rpm', '>=3.5'
 gem "pg", ">= 0.14.1"
 
 group :production do
+  gem 'memcachier'
 end
 
 group :development do
