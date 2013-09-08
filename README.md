@@ -10,7 +10,7 @@ Get the code. The code is waiting to be forked on [github](https://github.com/ne
 Load the sample DB locally:
 
     rake db:create
-    pg_restore --verbose --clean --no-acl --no-owner -h localhost -U $USER -d newrelic-ruby-kata_development public/sample-data.dump`
+    pg_restore --verbose --clean --no-acl --no-owner -h localhost -U $USER -d newrelic-ruby-kata_development public/sample-data.dump
 
 Step 2
 -------
