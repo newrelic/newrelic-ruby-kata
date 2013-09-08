@@ -48,9 +48,12 @@ git push heroku master</pre>
         <p>Populate the sample database and set up memcache.</p>
         <pre>heroku addons:add heroku-postgresql:dev
 heroku addons:add pgbackups:plus
-heroku addons:add memcache
+heroku addons:add memcachier
+heroku config:set NEW_RELIC_APP_NAME="YOUR APP NAME GOES HERE"
 	
 heroku pgbackups:restore DATABASE 'http://newrelic-ruby-kata.herokuapp.com/sample-data.dump'</pre>
+
+git push heroku master
     </div>
     <div class="span4">
       <h2>Step 5</h2>
