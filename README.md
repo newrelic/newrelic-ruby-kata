@@ -17,7 +17,7 @@ Step 2
 Deploy your app to Heroku and load the database there
 
     heroku apps:create
-    heroky addons:add pgbackups:plus newrelic:standard memcache:5mb
+    heroky addons:add pgbackups:plus newrelic:standard memcachier
     heroku pgbackups:restore DATABASE 'http://newrelic-ruby-kata.herokuapp.com/sample-data.dump'
 
 
