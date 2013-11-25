@@ -18,17 +18,8 @@ development:
   encoding: unicode
   database: newrelic-ruby-kata_development
   pool: 5
-  username: postgres
-  password: demo
-  template: template0
-production:
-  adapter: postgresql
-  host: localhost
-  encoding: unicode
-  database: newrelic-ruby-kata_development
-  pool: 5
-  username: postgres
-  password: demo
+  username: <%= ENV['USER'] %>
+  password:
   template: template0
 
   # Connect on a TCP socket. Omitted by default since the client uses a
