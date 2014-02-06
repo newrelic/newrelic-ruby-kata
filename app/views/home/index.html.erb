@@ -38,7 +38,8 @@ git push heroku master</pre>
           The New Relic agent will help you find and solve the performance issues in this 
 		application as well as help you see the complete impact of your changes.
       </p>
-	  <pre>heroku addons:add newrelic:stark</pre>
+	  <pre>heroku addons:add newrelic:stark
+heroku config:set NEW_RELIC_APP_NAME="YOUR APP NAME GOES HERE"</pre>
     </div>
   </div>
 <div class="row">
