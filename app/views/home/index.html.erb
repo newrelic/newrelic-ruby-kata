@@ -3,8 +3,7 @@
 	.hero-unit p { line-height: 140%; }
 	</style>
     <h1 style="margin-top: -0.5em;">New Relic Ruby Kata</h1>
-    <p>Code Kata is a term coined by Dave Thomas, co-author of the book The Pragmatic Programmer, 
-	in a nod to the Japanese concept of kata in the martial arts. A code kata is an exercise in 
+    <p>Code Kata is a term coined by Dave Thomas, co-author of the book <a href="http://www.amazon.com/gp/product/020161622X/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=020161622X&linkCode=as2&tag=alveleschpta-20">The Pragmatic Programmer</a> in a nod to the Japanese concept of kata in the martial arts. A code kata is an exercise in 
 	programming which helps a programmer hone their skills through practice and repetition.</p>
     <p>The goal of this Kata is to get your mind wired into performance driven development, 
 	to reinforce your skills as a user of <a href="http://newrelic.com">New Relic</a> 
@@ -39,7 +38,8 @@ git push heroku master</pre>
           The New Relic agent will help you find and solve the performance issues in this 
 		application as well as help you see the complete impact of your changes.
       </p>
-	  <pre>heroku addons:add newrelic:standard</pre>
+	  <pre>heroku addons:add newrelic:stark
+heroku config:set NEW_RELIC_APP_NAME="YOUR APP NAME GOES HERE"</pre>
     </div>
   </div>
 <div class="row">
