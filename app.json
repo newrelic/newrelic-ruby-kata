@@ -1,0 +1,16 @@
+{
+	"name": "New Relic Ruby Kata",
+	"description": "Using New Relic and Heroku see how many things you can find and fix to make this app perform fast!",
+	"repository": "https://github.com/newrelic/newrelic-ruby-kata",
+	"keywords": ["newrelic", "ruby", "kata"],
+	
+	"scripts": {
+		"postdeploy": "heroku pgbackups:restore DATABASE 'http://newrelic-ruby-kata.herokuapp.com/sample-data.dump'"
+		},
+
+	"addons": [
+		"pgbackups:plus",
+		"newrelic:stark",
+		"memcachier"
+	]
+}
