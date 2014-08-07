@@ -1,8 +1,6 @@
 newrelic-ruby-kata
 ==================
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/rkst/newrelic-ruby-kata)
-
 Using New Relic and Heroku see how many things you can find and fix to make this app perform fast!
 
 Step 1
@@ -18,8 +16,8 @@ Step 2
 -------
 Deploy your app to Heroku and load the database there
 
-    heroku apps:create
-    heroku addons:add pgbackups:plus newrelic:stark memcachier
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/newrelic/newrelic-ruby-kata/tree/master)
+
     heroku pgbackups:restore DATABASE 'http://newrelic-ruby-kata.herokuapp.com/sample-data.dump'
 
 
