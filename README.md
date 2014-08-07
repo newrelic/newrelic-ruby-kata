@@ -1,6 +1,8 @@
 newrelic-ruby-kata
 ==================
 
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/rkst/newrelic-ruby-kata)
+
 Using New Relic and Heroku see how many things you can find and fix to make this app perform fast!
 
 Step 1
