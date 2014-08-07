@@ -1,0 +1,18 @@
+{
+  "name": "New Relic Ruby Kata",
+  "description": "Using New Relic and Heroku, see how many things you can find and fix to make this app perform fast!",
+  "repository": "https://github.com/newrelic/newrelic-ruby-kata",
+  "website": "http://newrelic-ruby-kata.herokuapp.com/",
+  "logo": "http://storefront.nr-assets.net/assets/newrelic/source/NewRelic-logo-square.png",
+  "success_url": "/",
+  "addons": [
+    "pgbackups:plus",
+    "newrelic:stark",
+    "memcachier"
+  ],
+  "keywords": [
+    "new relic",
+    "rails",
+    "kata"
+  ]
+}
