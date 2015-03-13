@@ -4,7 +4,7 @@ class TweetsController < ApplicationController
     response = HTTParty.get('http://twitter.com/newrelic')
     
     parsed_data = Nokogiri::HTML.parse response.body
-    tweetNodes = parsed_data.xpath("//p[@class='js-tweet-text']")
+    tweetNodes = parsed_data.css(".js-tweet-text")
     @nodes = tweetNodes.collect do |node|
       node.inner_html
     end
