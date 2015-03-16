@@ -6,7 +6,7 @@
   "logo": "http://storefront.nr-assets.net/assets/newrelic/source/NewRelic-logo-square.png",
   "success_url": "/",
   "addons": [
-    "pgbackups:plus",
+    "heroku-postgresql",
     "newrelic:stark",
     "memcachier"
   ],
