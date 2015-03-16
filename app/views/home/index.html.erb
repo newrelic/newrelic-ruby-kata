@@ -25,7 +25,7 @@
  	</div>
     <div class="span4">
       <h2>Step 2</h2>
-      <p>Load the sample DB locally:</p>
+      <p>Load the sample DB locally (note that you will need Postgres running on your local machine. You can use <a href="http://postgresapp.com/">Postgres.app</a> or similar):</p>
       <pre>rake db:create
 
 pg_restore --verbose --clean --no-acl --no-owner -h localhost -U $USER -d newrelic-ruby-kata_development public/sample-data.dump</pre>
@@ -35,8 +35,10 @@ pg_restore --verbose --clean --no-acl --no-owner -h localhost -U $USER -d newrel
       <h2>Step 3</h2>
       <p>Deploy your app to Heroku, and load the database:
       <p>Look for the purple 'Deploy to Heroku' button on your Github fork's README.</p>
-      <p>Then, you can load the sample data via:</p>
-      <pre>heroku pgbackups:restore DATABASE 'http://newrelic-ruby-kata.herokuapp.com/sample-data.dump'</pre>
+      <p>Then, you can load the sample data from the root directory of your local application via:</p>
+      <pre>heroku pg:credentials DATABASE_URL</pre>
+      <p>This will give you the hostname, username, database name, port and password which you can enter into the following command in order to upload the sample-data.dump to your heroku database.</p>
+      <pre>pg_restore --verbose --clean --no-acl --no-owner -h &#60;HOSTNAME&#62; -U &#60;USER&#62; -d &#60;DATABASE&#62; -p &#60;PORT&#62; --password public/sample-data.dump</pre>
     </div>
   </div>
 <div class="row">
