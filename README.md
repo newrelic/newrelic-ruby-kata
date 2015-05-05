@@ -24,7 +24,7 @@ First,
 
 Then, you can load the sample data via:
 
-    heroku pgbackups:restore DATABASE 'http://newrelic-ruby-kata.herokuapp.com/sample-data.dump'
+    heroku pg:backups restore DATABASE 'http://newrelic-ruby-kata.herokuapp.com/sample-data.dump'
 
 Step 4
 -------
