@@ -11,8 +11,9 @@ Step 2
 -------
 Load the sample DB locally:
 
-    rake db:create
+    bundle exec rake db:create
     pg_restore --verbose --clean --no-acl --no-owner -h localhost -U $USER -d newrelic-ruby-kata_development public/sample-data.dump
+    bundle exec rails s
 
 Step 3
 -------
@@ -24,7 +25,11 @@ First,
 
 Then, you can load the sample data via:
 
-    heroku pgbackups:restore DATABASE 'http://newrelic-ruby-kata.herokuapp.com/sample-data.dump'
+    heroku addons:create heroku-postgresql:hobby-dev
+    heroku addons:create memcachier
+    heroku config:set NEW_RELIC_APP_NAME=<NAME>
+    heroku pg:credentials DATABASE_URL
+    pg_restore --verbose --clean --no-acl --no-owner -h <HOSTNAME> -U <USER> -d <DATABASE> -p <PORT> --password public/sample-data.dump
 
 Step 4
 -------
