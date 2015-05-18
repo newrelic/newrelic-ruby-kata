@@ -9,7 +9,7 @@
   Do sites provide /favicon.ico ?
   <ul>
   <% @sites.each do |site| -%>
-    <li><%= site.url %> <% if site.icon.present? %><i class="icon-ok"></i><% end %></li>
+    <li><%= site.url %> <% if site.icon.present? %><i class="glyphicon glyphicon-ok"></i><% end %></li>
   <% end -%>
   </ul>
 </div>
