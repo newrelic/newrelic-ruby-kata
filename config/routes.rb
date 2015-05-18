@@ -1,4 +1,4 @@
-NewrelicRubyKata::Application.routes.draw do
+Rails.application.routes.draw do
   get "big_list" => "big_list#index"
   get "loop" => "loop#index"
   get "caching" => "caching#index"

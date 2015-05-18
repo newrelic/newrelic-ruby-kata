@@ -10,35 +10,12 @@
     <%= yield(:head) %>
   </head>
   <body class="<%= controller_name %> <%= action_name %>">
-	<style>
-	.navbar-inner {
-		background-color: black; background-image: none;
-	}
-	.navbar-inner .brand {
-		text-shadow: none;
-		color: #aaa;
-	}
-	.navbar .nav > li > a.dropdown-toggle {
-		text-shadow: none;
-		color: #aaa;
-	}
-	.navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle {
-		background-color: black;
-		color: #eee;
-	}
-	</style>
-    <header class="navbar navbar-fixed-top">
-      <nav class="navbar-inner">
-        <div class="container">
-          <%= render 'layouts/navigation' %>
-        </div>
-      </nav>
-    </header>
+    <%= render 'layouts/navigation' %>
     <div id="main" role="main">
       <div class="container">
         <div class="content">
            <div class="row">
-            <div class="span12">
+            <div class="col-md-12">
               <%= render 'layouts/messages' %>
               <%= yield %>
             </div>
