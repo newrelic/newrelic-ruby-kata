@@ -1,37 +1,24 @@
-  <div class="hero-unit" style="margin-top: -1em; padding-bottom: 0.7em;">
-	<style>
-	.hero-unit p { line-height: 140%; }
-	</style>
-    <h1 style="margin-top: -0.5em;">New Relic Ruby Kata</h1>
-    <p>Code Kata is a term coined by Dave Thomas, co-author of the book <a href="http://www.amazon.com/gp/product/020161622X/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=020161622X&linkCode=as2&tag=alveleschpta-20">The Pragmatic Programmer</a> in a nod to the Japanese concept of kata in the martial arts. A code kata is an exercise in 
-	programming which helps a programmer hone their skills through practice and repetition.</p>
-    <p>The goal of this Kata is to get your mind wired into performance driven development, 
-	to reinforce your skills as a user of <a href="http://newrelic.com">New Relic</a> 
-        and to help you get more familiar with <a href="http://www.heroku.com/">Heroku</a>.</p>
-    <p>Of course the code in some areas of this application is intentionally bad, but what fun would this 
-	be if everything worked the way it should?</p>
-    <p><a href="http://codekata.pragprog.com/" class="btn btn-primary btn-large">Learn more about 
-	Code Katas &raquo;</a></p>
-    
+  <div class="jumbotron">
+    <h1>New Relic Ruby Kata</h1>
+    <p>Code Kata is a term coined by Dave Thomas, co-author of the book <a href="http://www.amazon.com/gp/product/020161622X/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=020161622X&linkCode=as2&tag=alveleschpta-20">The Pragmatic Programmer</a> in a nod to the Japanese concept of kata in the martial arts. A code kata is an exercise in programming which helps a programmer hone their skills through practice and repetition.</p>
+    <p>The goal of this Kata is to get your mind wired into performance driven development, to reinforce your skills as a user of <a href="http://newrelic.com">New Relic</a> and to help you get more familiar with <a href="http://www.heroku.com/">Heroku</a>.</p>
+    <p>Of course the code in some areas of this application is intentionally bad, but what fun would this be if everything worked the way it should?</p>
+    <p><a href="http://codekata.pragprog.com/" class="btn btn-primary btn-large">Learn more about Code Katas &raquo;</a></p>
   </div>
 
   <div class="row">
-    <div class="span4">
+    <div class="col-md-4">
       <h2>Step 1</h2>
-      <p>Get the code. Using your <a href="http://github.com">Github</a> account, fork
-	the <a href="https://github.com/newrelic/newrelic-ruby-kata">newrelic/newrelic-ruby-kata</a> repo
-	and then clone it onto your machine.</p>
+      <p>Get the code. Using your <a href="http://github.com">Github</a> account, fork the <a href="https://github.com/newrelic/newrelic-ruby-kata">newrelic/newrelic-ruby-kata</a> repo and then clone it onto your machine.</p>
     <p><a class="btn" href="https://github.com/newrelic/newrelic-ruby-kata/">Fork &amp; Clone! &raquo;</a></p>
  	</div>
-    <div class="span4">
+    <div class="col-md-4">
       <h2>Step 2</h2>
       <p>Load the sample DB locally (note that you will need Postgres running on your local machine. You can use <a href="http://postgresapp.com/">Postgres.app</a> or similar):</p>
       <pre>rake db:create
-
 pg_restore --verbose --clean --no-acl --no-owner -h localhost -U $USER -d newrelic-ruby-kata_development public/sample-data.dump</pre>
-    </code>
- 	</div>
-    <div class="span4">
+   	</div>
+    <div class="col-md-4">
       <h2>Step 3</h2>
       <p>Deploy your app to Heroku, and load the database:
       <p>Look for the purple 'Deploy to Heroku' button on your Github fork's README.</p>
@@ -41,36 +28,32 @@ pg_restore --verbose --clean --no-acl --no-owner -h localhost -U $USER -d newrel
       <pre>pg_restore --verbose --clean --no-acl --no-owner -h &#60;HOSTNAME&#62; -U &#60;USER&#62; -d &#60;DATABASE&#62; -p &#60;PORT&#62; --password public/sample-data.dump</pre>
     </div>
   </div>
-<div class="row">
-    <div class="span4">
+  <div class="row">
+    <div class="col-md-4">
       <h2>Step 4</h2>
       <p>You can watch a <a href="http://newrelic.com/resources/training">video on getting started</a> with the New Relic agent to help get you started. The New Relic agent will help you find and solve the performance issues in this application as well as help you see the complete impact of your changes.
     </div>
-    <div class="span4">
+    <div class="col-md-4">
       <h2>Step 5</h2>
-      <p>Fix the code / Solve as many of the Katas as you can. There are 
-	seven<!-- TODO --> distinct Katas in 
-	this application that can be torn apart and fixed by using your awesome dev 
-	abilities and the deep metrics that New Relic provides.</p>
-	<p><ol>
-		<li>Generate traffic a.k.a. click around</li>
-		<li>Discover a slow page</li>
-		<li>Investigate the problem (using New Relic)</li>
-		<li>Resolve with code changes</li>
-		<li>Push the revised code to Heroku.<br><em style="margin-left: 1em;">Repeat...</em></li>
-		</ol>
-		</p>
+      <p>Fix the code / Solve as many of the Katas as you can. There are seven<!-- TODO --> distinct Katas in this application that can be torn apart and fixed by using your awesome dev abilities and the deep metrics that New Relic provides.</p>
+      <p>
+        <ol>
+      		<li>Generate traffic a.k.a. click around</li>
+      		<li>Discover a slow page</li>
+      		<li>Investigate the problem (using New Relic)</li>
+      		<li>Resolve with code changes</li>
+      		<li>
+            Push the revised code to Heroku.
+            <br>
+            <em style="margin-left: 1em;">Repeat...</em>
+          </li>
+      	</ol>
+  		</p>
     </div>
-    <div class="span4">
+    <div class="col-md-4">
       <h2>Step 6</h2>
-      <p>Let us know how you did, what you liked or disliked, 
-          what helped you find problems or what were the challenges, 
-          what you like about New Relic and what you don't - we just want to hear from you 
-			and see what we can do to get better.  
-		</p><p>
-          We'll even send you something for demonstrating your geek super powers when 
-			you complete the Kata - just provide us with your thoughts 
-			and a link to your forked repo (with your answers).</p>
+      <p>Let us know how you did, what you liked or disliked, what helped you find problems or what were the challenges, what you like about New Relic and what you don't - we just want to hear from you and see what we can do to get better.</p>
+      <p>We'll even send you something for demonstrating your geek super powers when you complete the Kata - just provide us with your thoughts and a link to your forked repo (with your answers).</p>
       <p><a class="btn" href="https://support.newrelic.com/home">Tell us! &raquo;</a></p>
     </div>
   </div>
