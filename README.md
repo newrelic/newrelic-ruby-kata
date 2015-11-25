@@ -33,7 +33,7 @@ Then, you can load the sample data via:
 
 Step 4
 -------
-You can watch a [video on getting started](http://newrelic.com/resources/training) with the New Relic agent to help get you started. The New Relic agent will help you find and solve the performance issues in this application as well as help you see the complete impact of your changes.
+You can watch a [video on getting started](https://learn.newrelic.com/courses/intro_apm/performance_apm) with the New Relic agent to help get you started. The New Relic agent will help you find and solve the performance issues in this application as well as help you see the complete impact of your changes.
 
 Step 5
 -------
