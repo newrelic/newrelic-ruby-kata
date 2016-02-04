@@ -7,7 +7,7 @@
   "success_url": "/",
   "addons": [
     "heroku-postgresql",
-    "newrelic:stark",
+    "newrelic",
     "memcachier"
   ],
   "keywords": [
