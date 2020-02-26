@@ -13,9 +13,8 @@ curl -L https://raw.githubusercontent.com/newrelic/newrelic-ruby-kata/master/clo
 ```
 
 Connect Cloud9 to the started Instance,
-1.kata-download.sh,
-2.kata-install.sh,
-3.kata-setup.sh
+1.kata-install.sh,
+2.kata-setup.sh
 Ruby-kata is set up by executing the above in order.
 Running kata-start.sh starts the Kata environment.
 
@@ -32,8 +31,7 @@ curl -L https://raw.githubusercontent.com/newrelic/newrelic-ruby-kata/master/clo
 ```
 
 起動したInstanceにCloud9を接続し、
-1.kata-download.sh、
-2.kata-install.sh、
-3.kata-setup.sh  
+1.kata-install.sh、
+2.kata-setup.sh  
 上記を順番に実行するとRuby-kataがセットアップされます。  
 kata-start.sh を実行するとKata環境がスタートします。
