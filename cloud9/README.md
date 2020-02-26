@@ -6,9 +6,9 @@
 
 Enter the following script in Amazon Linux 2 EC2 Userdata.
 
-```sh: Userdata
-#! / bin / bash
-  
+``` sh:Userdata
+#!/bin/bash  
+  
 curl -L https://raw.githubusercontent.com/newrelic/newrelic-ruby-kata/master/cloud9/userdata.sh | bash
 ```
 
