@@ -14,12 +14,12 @@ git clone https://github.com/qryuu/new-relic-kata-setup.git
 ```
 
 Execute the following scripts in order.
-newrelic-ruby-kata\cloud9_amazon_linux2\Kata-Setup
+newrelic-ruby-kata\cloud9_amazon_linux2\Kata-Setup  
 
-1.environment-setup
-2.kata-install
-3.ruby-install
-4.kata-setup
+1.environment-setup  
+2.kata-install  
+3.ruby-install  
+4.kata-setup  
 
 The New Relic Kata environment is now complete.
 
@@ -40,10 +40,11 @@ git clone https://github.com/qryuu/new-relic-kata-setup.git
 
 以下のScriptを順番に実行し環境を構築します。
 newrelic-ruby-kata\cloud9_amazon_linux2\Kata-Setup
-1.environment-setup
-2.kata-install
-3.ruby-install
-4.kata-setup
+
+1.environment-setup  
+2.kata-install  
+3.ruby-install  
+4.kata-setup  
 
 New Relic Ruby Kata 環境の構築はこれで完了です。
 
